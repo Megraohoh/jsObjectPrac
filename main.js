@@ -44,7 +44,7 @@ const statements = Object.create({
     taxes: {
         enumerable: true,
         writable: false,
-        value: "Taxes don't interest me, only power and fear."
+        value: "Taxes don't interest me, only power and your fear."
     },
     jobs: {
         enumerable: true,
@@ -64,7 +64,7 @@ const statements = Object.create({
     crime_enforcement: {    
         enumerable: true,
         writable: false,
-        value:"Greyback will be the head of my policy force and his enforcement will be at his discretion."
+        value:"Greyback will be the head of my police force and his enforcement will be at his discretion."
     }
 })
  const links = Object.create({
@@ -121,3 +121,8 @@ const statements = Object.create({
          event_time: "Sundown"
      }
  })
+
+ function update (objectToChange, propertyToChange, updatedInfo) {
+     objectToChange[propertyToChange] = updatedInfo;
+ }
+ update(candidate, mission_statement, "Kill Harry Potter." )
