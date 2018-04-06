@@ -122,7 +122,16 @@ const statements = Object.create({
      }
  })
 
+ //After you have defined all the objects for representing the data, 
+ //write a corresponding function for each one whose purpose is to change the state of the object. 
+ //Then invoke each function, and pass a reference to the correct object to it and modify a property.
+
+//writing function with arguments, second line to replace the value when arguments 
+//are passed through the function 
+//when the function gets invoked
  function update (objectToChange, propertyToChange, updatedInfo) {
      objectToChange[propertyToChange] = updatedInfo;
  }
- update(candidate, mission_statement, "Kill Harry Potter." )
+ //here the function is invoked. Interpreter sees the named object and follows the tree to align arguments with properties/values
+ update(candidate, "mission_statement", "Kill Harry Potter." )
+console.log(candidate);
