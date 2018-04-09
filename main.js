@@ -1,5 +1,4 @@
-//Write all objects, properties, and values for campaign
-//variables with inherent properties that protect similar to writable
+//Write all objects, properties, and values for campaign variables with inherent properties that protect similar to writable
 const candidate = Object.create({
     candidate_name: {
         enumerable: true,
@@ -122,16 +121,14 @@ const statements = Object.create({
      }
  })
 
- //After you have defined all the objects for representing the data, 
- //write a corresponding function for each one whose purpose is to change the state of the object. 
- //Then invoke each function, and pass a reference to the correct object to it and modify a property.
+ //After you have defined all the objects for representing the data, write a corresponding function for each one whose purpose is to change the state of the object. Then invoke each function, and pass a reference to the correct object to it and modify a property.
 
-//writing function with arguments, second line to replace the value when arguments 
-//are passed through the function 
-//when the function gets invoked
+//writing function with arguments, second line to replace the value when arguments are passed through the function when the function gets invoked
  function update (objectToChange, propertyToChange, updatedInfo) {
      objectToChange[propertyToChange] = updatedInfo;
  }
  //here the function is invoked. Interpreter sees the named object and follows the tree to align arguments with properties/values
  update(candidate, "mission_statement", "Kill Harry Potter." )
-console.log(candidate);
+//console.log(candidate);
+
+//Use document.createElement() to build an <article> element representing Elizabeth. The id property of the element should be her congressional district, and its content should be her platform data. Once the element has been created, insert it into the DOM
